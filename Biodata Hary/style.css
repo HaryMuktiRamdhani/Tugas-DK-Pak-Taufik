@@ -1,0 +1,179 @@
+/* Reset default browser style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial,sans-serif;
+  line-height: 1,6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+/* Header and Navigation */
+header {
+  background-color: #23486A;
+  color: #fff;
+  padding: 10px 0;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.nav-logo img.logo {
+  height: 40px;
+}
+.nav-logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  margin: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+nav ul li a:hover {
+  background-color: #3b6790;
+}
+/* Container */
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 100px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Section Headers */
+h2 {
+  margin-bottom: 15px;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+/* Profile Section */
+.bio {
+  margin: 10px 0;
+}
+.bio label {
+  font-weight: bold;
+  display: inline-block;
+  width: 150px;
+  color: #555;
+}
+.bio p {
+  display: inline-block;
+  color: #333;
+}
+/* Foto Profil di Halaman Utama */
+.about-photo {
+  display: flex; /* Menggunakan Flexbox */
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  align-items: center; /* Memastikan elemen berada di tengah horizontal */
+  justify-content: center; /* Memastikan elemen berada di tengah vertikal */
+  gap: 8px; /* Memberikan jarak antar elemen di dalam .about-photo */
+  margin-bottom: 20px; /* Menambah jarak ke elemen berikutnya */
+  text-align: center;
+}
+.about-photo img.profile-photo {
+  width: 150px; /* Ukuran gambar */
+  height: 150px; /* Ukuran gambar */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  border: 2px solid #ddd; /* Memberikan border pada gambar */
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+}
+.about-photo-container {
+  display: flex; /* Untuk tata letak lebih dari satu gambar */
+  flex-wrap: wrap; /* Agar gambar yang banyak tidak menyatu dan turun ke baris berikutnya */
+  gap: 16px; /* Memberikan jarak antar .about-photo */
+  justify-content: center; /* Mengatur gambar berada di tengah */
+  align-items: flex-start; /* Menyelaraskan elemen di atas */
+}
+/* Education Section */
+.education-list {
+  list-style-type: none;
+  padding: 0;
+}
+.education-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+.education-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.education-list li img.edu-logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.education-list li p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+/* Skills Section */
+.skills p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+.skills p strong {
+  color: #333;
+}
+/* Contact Section */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.social-links a img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+.social-links a:hover {
+  background-color: #e0e0e0;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #23486A;
+  color: #fff;
+  margin-top: 20px;
+  border-top: 2px;
+}
