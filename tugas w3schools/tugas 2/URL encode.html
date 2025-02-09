@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter a URL to encode:</p>
+
+<input type="text" id="myURL" value="https://github.com/HaryMuktiRamdhani">
+<button onclick="encodeLink()">Encode</button>
+<button onclick="openEncodedLink()">Open Encoded Link</button>
+
+<p id="encodedLink"></p>
+
+<script>
+function encodeLink() {
+  var url = document.getElementById("https://github.com/HaryMuktiRamdhani").value;
+  var encodedUrl = encodeURIComponent(url);
+  document.getElementById("encodedLink").innerHTML = "Encoded URL: " + encodedUrl;
+}
+
+function openEncodedLink() {
+  var url = document.getElementById("myURL").value;
+  var encodedUrl = encodeURIComponent(url);
+  window.open("https://github.com/HaryMuktiRamdhani" + encodedUrl, "_blank");
+}
+</script>
+
+</body>
+</html>
+
+</html>
+

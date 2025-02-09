@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image</title>
+</head>
+<body>
+  <h2>1.HTML Image</h2>
+  <img src="karakter-logo.jpg" alt="karakter" width="400" height="400">
+
+  <h3>2.The src Attribute</h3>
+  <p>The alt attribute should reflect the image content, so users who cannot see the image get an understanding of what the image contains:</p>
+
+<img src="anime.jpg" alt="my photo" width="400" height="400">
+
+<h2>Images in Another Folder</h2>
+<p>It is common to store images in a sub-folder. You must then include the folder name in the src attribute:</p>
+
+<img src="karakter-logo.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+<h3>Images on Another Server/Website</h3>
+
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+
+<h3>Animated Images</h3>
+
+<p>HTML allows moving images:</p>
+
+<img src="coding.gif" alt="Computer man" style="width:48px;height:48px;">
+
+<h3>Image as a Link</h3>
+<p>The image is a link. You can click on it.</p>
+
+<a href="default.asp">
+<img src="anime.jpg" alt="HTML tutorial" style="width:42px;height:42px;">
+</h3>
+
+<h2>Floating Images</h2>
+<p><strong>Float the image to the right:</strong></p>
+
+<p>
+<img src="coding.gif" alt="coding gif" style="float:right;width:42px;height:42px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+</p>
+
+<p><strong>Float the image to the left:</strong></p>
+<p>
+<img src="coding.gif" alt="coding gif" style="float:left;width:42px;height:42px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+</p>
+
+<h2>Background Image</h2>
+
+<p>A background image for a p element:</p>
+
+<p style="background-image: url('pemandangan.webp');">
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a p element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. Try resizing the<br>
+browser window to see how the<br>
+background image behaves.
+
+ background-image: url('example_img_girl.jpg');
+</p>                                            
+</style>
+</head>
+<body>
+
+<h2>Background Repeat</h2>
+
+<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+</p>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="Gambar WhatsApp 2024-11-12 pukul 18.50.35_b0b30043.jpg" style="width:auto;">
+</picture>
+</body>
+</html>

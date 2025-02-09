@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>ASCII Character Table</h2>
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Character</th>
+            <th>Description</th>
+        </tr>
+        <script>
+            for (let i = 32; i <= 255; i++) {
+                document.write(<tr><td>${i}</td><td>${String.fromCharCode(i)}</td><td>ASCII ${i}</td></tr>);
+            }
+        </script>
+    </table>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tables</title>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 15px;
+      }
+      th, td {
+        background-color: #96D4D4;
+      }
+      th, td {
+        border-radius: 10px;
+      }
+      th, td {
+        border-style: dotted;
+      }
+      table {
+        width: 100%;
+      }
+      tr:nth-child(even) {
+        background-color: #D6EEEE;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <h2>A basic HTML table</h2>
+    <table style="width:100%">
+      <tr>
+        <th>Nama</th>
+        <th>Kota</th>
+        <th>Negara</th>
+      </tr>
+      <tr>
+        <td>Hary Mukti Ramdhani</td>
+        <td>Bandung</td>
+        <td>Indonesia</td>
+      </tr>
+      <tr>
+        <td>Zihan Siti Nurkhodijah</td>
+        <td>Surabaya</td>
+        <td>Amerika</td>
+      </tr>
+    </table>
+    <p>Ini adalah table simple saya.</p>
+  
+    <h2>TD elements define table cells</h2>
+    <table style="width:100%">
+      <tr>
+        <td>Hary</td>
+        <td>Azan</td>
+        <td>Aldi</td>
+      </tr>
+    </table>
+    <p>To understand the example better, we have added borders to the table.</p>
+  
+    <h2>TR elements define table rows</h2>
+    <table style="width:100%">
+      <tr>
+        <td>Hary</td>
+        <td>Azan</td>
+        <td>Aldi</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>16</td>
+        <td>16</td>
+      </tr>
+    </table>
+    <p>To understand the example better, we have added borders to the table.</p>
+  
+    <h2>TH elements define table headers</h2>
+    <table style="width:100%">
+      <tr>
+        <th>Orang 1</th>
+        <th>Orang 2</th>
+        <th>Orang 3</th>
+      </tr>
+      <tr>
+        <td>Hary</td>
+        <td>Azan</td>
+        <td>Aldi</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>16</td>
+        <td>16</td>
+      </tr>
+    </table>
+    <p>To understand the example better, we have added borders to the table.</p>
+  
+    <h2>Table With Border</h2>
+    <p>Use the CSS border property to add a border to the table.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Hary</td>
+        <td>Mukti Ramdhani</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Azan</td>
+        <td>Maha Putra</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Aldi</td>
+        <td>Gustian</td>
+        <td>16</td>
+      </tr>
+    </table>
+  
+    <h2>Table With Invisible Borders</h2>
+    <p>Style the table with white borders and a background color of the cells to make the impression of invisible borders.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+  
+    <h2>Table With Rounded Borders</h2>
+    <p>Use the CSS border-radius property to add rounded corners to the table cells.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+  
+    <h2>Table With Dotted Borders</h2>
+    <p>Use the CSS border-style property to set the style of the borders.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+  
+    <h2>100% wide HTML Table</h2>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+  
+    <h2>Table Headers</h2>
+    <p>Use the TH element to define table headers.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+  
+    <h2>Cellpadding</h2>
+    <p>Cell padding specifies the space between the cell content and its borders.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <p><strong>Tip:</strong> Try to change the padding to 5px.</p>
+  
+    <h2>Cell that spans two columns</h2>
+    <p>To make a cell span more than one column, use the colspan attribute.</p>
+    <table style="width:100%">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+  
+    <h2>Zebra Striped Table</h2>
+    <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+  
+    <h2>Colgroup</h2>
+    <p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+    <table style="width: 100%;">
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+      </tr>
+    </table>
+  
+  </body>
+  </html>
+</body>
+</html>
