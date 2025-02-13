@@ -1,0 +1,137 @@
+/* Style dasar */
+body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#todo-container {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  border: 2px solid #2e60ea;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #2e60ea;
+}
+
+#todo-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#input-box {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#category {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+}
+
+#input-button {
+  background-color: #2e60ea;
+  color: white;
+}
+
+#input-button:hover {
+  background-color: #9eb7fd;
+}
+
+#filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+#clear-all {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  border: 2px solid transparent; 
+}
+
+li:hover {
+  transform: scale(1.02);
+  border: 2px solid #fff; 
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 5px; 
+  position: absolute;
+  right: 10px; 
+}
+
+
+.edit-btn,
+.delete-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode #todo-container {
+  background-color: #333;
+  color: white;
+}
