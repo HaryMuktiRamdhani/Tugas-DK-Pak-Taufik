@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Relawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran Relawan</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <!-- Informasi Pribadi -->
+            <h3>Informasi Pribadi</h3>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" value="Hary Mukti Ramdhani" required>
+
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" value="2008-04-09" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin" required>
+                <option value="Laki-laki" selected>Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" value="Kp.Pasirhalang, desa tugu mukti, kecamatan cisarua, kab. bandung barat" required>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" value="089656259178" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="harymukti757@gmail.com" required>
+            
+            <!-- Informasi Pendidikan & Pekerjaan -->
+            <h3>Informasi Pendidikan & Pekerjaan</h3>
+            <label for="pendidikan">Pendidikan Terakhir:</label>
+            <input type="text" id="pendidikan" name="pendidikan" value="SMK - Pengembangan perangkat lunak & gim" required>
+
+            <label for="pekerjaan">Pekerjaan Saat Ini:</label>
+            <input type="text" id="pekerjaan" name="pekerjaan" value="masih pelajar" required>
+
+            <label for="keahlian">Keahlian & Kompetensi:</label>
+            <input type="text" id="keahlian" name="keahlian" value="Design,Editing,Design Grafis" required>
+            
+            <!-- Pengalaman & Motivasi -->
+            <h3>Pengalaman & Motivasi</h3>
+            <label for="pengalaman_volunteer">Pernah Menjadi Volunteer?</label>
+            <select id="pengalaman_volunteer" name="pengalaman_volunteer" required>
+                <option value="Tidak">Tidak</option>
+            </select>
+
+            <label for="motivasi">Motivasi Bergabung:</label>
+            <textarea id="motivasi" name="motivasi" required>Saya ingin bergabung sebagai relawan karena saya memiliki keinginan kuat untuk berkontribusi secara positif kepada masyarakat, sekaligus mengembangkan keterampilan seperti kerja sama tim, komunikasi, dan kepemimpinan. Melalui kegiatan ini, saya berharap dapat meningkatkan rasa empati, memahami berbagai tantangan sosial, serta mendapatkan pengalaman berharga yang dapat mendukung perkembangan pribadi dan profesional saya. Selain itu, saya percaya bahwa menjadi relawan akan membuka peluang untuk bertemu dengan orang-orang yang memiliki visi yang sama, memperluas jaringan sosial, dan memberikan dampak nyata bagi lingkungan sekitar.</textarea>
+
+            <label for="bidang">Bidang yang Diminati:</label>
+            <input type="text" id="bidang" name="bidang" value="Teknologi, Pendidikan, Sosial" required>
+            
+            <!-- Ketersediaan Waktu & Lokasi -->
+            <h3>Ketersediaan Waktu & Lokasi</h3>
+            <label for="kota">Bersedia Volunteer di Kota Mana?</label>
+            <input type="text" id="kota" name="kota" value="Di kota bandung" required>
+
+            <label for="waktu">Waktu yang Bisa Disediakan:</label>
+            <input type="text" id="waktu" name="waktu" value="Sabtu & Minggu, pukul 10.00 - 17.00" required>
+            
+            <!-- Persetujuan & Upload Dokumen -->
+            <h3>Persetujuan & Upload Dokumen</h3>
+            <label for="cv">Upload CV atau Surat Motivasi (Opsional):</label>
+            <input type="file" id="cv" name="cv">
+
+            <label for="foto">Upload Foto atau KTP (Jika diperlukan):</label>
+            <input type="file" id="foto" name="foto">
+
+            <label>
+                <input type="checkbox" name="persetujuan" required checked> Saya setuju dengan syarat & ketentuan
+            </label>
+            
+            <button type="submit">Kirim Formulir</button>
+        </form>
+    </div>
+</body>
+</html>
